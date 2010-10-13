@@ -77,18 +77,29 @@ button {  width: auto; overflow: visible; }
  */
 
 /* --- Main Structure styles --- */
+html {
+	background: url(../img/header-images/top-header.png) no-repeat;
+
+}
+
 .container {
 	width: 960px;
 	margin: 0 auto;
 	}
 
-
+body {
+	background-image: url(../img/footer/footer-bar.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	overflow: auto;
+}
 /* ---- Header styles - INDEX ---- */
 
 header {
 	margin-bottom: 320px;
 }
 
+/*
 #top-banner {
 	background: url(../img/header-images/top-header.png) no-repeat;
 	background-position: -70px 0;
@@ -96,6 +107,7 @@ header {
 	width: auto;
 	margin: 0 0 -200px;
 }
+*/
 
 hgroup {
 	width: 840px; 
@@ -326,6 +338,8 @@ footer h2 {
 	margin-left: 30px;
 }
 
+
+
 .footer-logo {
 	background: url(../img/footer/footer-logo.jpg) no-repeat;
 	position: relative;
@@ -336,6 +350,7 @@ footer h2 {
 	width: 373px;
 }
 
+/*
 #footer-bar {
 	background-image: url(../img/footer/footer-bar.jpg);
 	background-repeat: no-repeat;
@@ -343,6 +358,7 @@ footer h2 {
 	padding: 128px 0px;
 	width: auto;
 }
+*/
 
 .footer-nav {
 	float: left;
