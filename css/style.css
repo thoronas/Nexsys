@@ -78,7 +78,7 @@ button {  width: auto; overflow: visible; }
 
 /* --- Main Structure styles --- */
 html {
-	background: url(../img/header-images/top-header.png) no-repeat;
+	background: url(../img/header-images/top-header.png) center 0 no-repeat;
 
 }
 
@@ -99,22 +99,13 @@ header {
 	margin-bottom: 320px;
 }
 
-/*
-#top-banner {
-	background: url(../img/header-images/top-header.png) no-repeat;
-	background-position: -70px 0;
-	padding: 125px 0;
-	width: auto;
-	margin: 0 0 -200px;
-}
-*/
-
 hgroup {
 	width: 840px; 
 	z-index: 4;
 	text-align: center;
 	margin: 0 0 0 200px;
 }
+
 
 hgroup h1 {
 	font-size: 1.2em;
@@ -199,6 +190,15 @@ a:hover .lenders {
 
 /* --- Header Styles - NOT INDEX --- */
 
+.smallHeader {
+	background-image: url(../img/header-images/top-icons/bg-lines.jpg);
+	background-repeat: no-repeat;
+	float: right;
+	position: relative;
+	left: 240px;
+	top: 55px;
+}
+
 hgroup {
 	width: 840px; 
 	z-index: 4;
@@ -222,7 +222,7 @@ hgroup strong {
 .header {
 	float: left;
 	text-decoration: none;
-	margin: 70px 0 0;
+	margin: 100px 30px 0 75px;
 }
 
 .header h2 {
@@ -246,12 +246,12 @@ a:hover .smallBroker {
 .smallAgents {
 	background-image: url(../img/header-images/top-icons/3icons-hover.png);
 	background-repeat: no-repeat;
-	background-position: -78px 12px;
+	background-position: 7px 13px;
 	padding: 44px 42px;
 }
 
 a:hover .smallAgents {
-	background: url(../img/header-images/forAgents-hover.png) -18px -3px no-repeat;
+	background: url(../img/header-images/forAgents-hover.png) -18px -107px no-repeat;
 }
 
 .smallLenders {
