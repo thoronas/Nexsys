@@ -95,15 +95,12 @@ body {
 }
 /* ---- Header styles - INDEX ---- */
 
-header {
-	margin-bottom: 320px;
-}
 
-hgroup {
+#index {
 	width: 840px; 
 	z-index: 4;
 	text-align: center;
-	margin: 0 0 0 200px;
+	margin: 0 0 0 120px;
 }
 
 
@@ -155,13 +152,6 @@ a:hover .brokers {
 	background: url(../img/header-images/forBrokers-hover.png) no-repeat;
 }
 
-.smallBroker {
-	background-image: url(../img/header-images/top-icons/3icons-hover.png);
-	background-repeat: no-repeat;
-	background-position: -78px 12px;
-	padding: 44px 35px;
-}
-
 .agents {
 	background: url(../img/header-images/forAgents.png) 0 44px no-repeat;  
 	padding: 102px 122px
@@ -193,17 +183,17 @@ a:hover .lenders {
 .smallHeader {
 	background-image: url(../img/header-images/top-icons/bg-lines.jpg);
 	background-repeat: no-repeat;
-	float: right;
 	position: relative;
-	left: 240px;
-	top: 55px;
+	left: 280px;
+	top: 70px;
+	width: 600px;
+	overflow: auto;
 }
 
-hgroup {
-	width: 840px; 
+#page-header {
 	z-index: 4;
 	text-align: center;
-	margin: 0 0 0 200px;
+	margin: 0 0 100px 65px;
 }
 
 hgroup h1 {
@@ -251,22 +241,22 @@ a:hover .smallBroker {
 }
 
 a:hover .smallAgents {
-	background: url(../img/header-images/forAgents-hover.png) -18px -107px no-repeat;
+	background: url(../img/header-images/top-icons/3icons-hover.png) 2px -99px no-repeat;
 }
 
 .smallLenders {
 	background-image: url(../img/header-images/top-icons/3icons-hover.png);
 	background-repeat: no-repeat;
-	background-position: -78px 12px;
+	background-position: -185px 16px;
 	padding: 44px 42px;
 }
 
 a:hover .smallLenders {
-	background: url(../img/header-images/forLenders-hover.png) 0 51px no-repeat;
+	background: url(../img/header-images/top-icons/3icons-hover.png) -179px -94px no-repeat;
 
 }
 
-/* --- Top Section --- */
+/* --- Index Top Section --- */
 
 .top-section {
 	width: 760px;
@@ -284,7 +274,7 @@ a:hover .smallLenders {
 	float: right;
 }
 
-/* --- Middle Section --- */
+/* --- Index Middle Section --- */
 
 #midsection {
 	background-image: url(../img/midsection/midsection-bg.jpg);
@@ -311,7 +301,7 @@ a:hover .smallLenders {
 	font-size: 2em;
 }
 
-/* --- Bottom Section --- */
+/* --- Index Bottom Section --- */
 
 .bottom-section {
 	width: 760px;
@@ -324,6 +314,38 @@ a:hover .smallLenders {
 	float: left;
 	margin: 0 35px 0 0;
 }
+
+/* --- Mutli column layouts NOT INDEX --- */
+
+.twoColumn {
+	width: 450px;
+	float: left;
+	margin-right: 60px;
+}
+
+.twoColumn-right {
+	width: 450px;
+	float: left;
+	margin-right: 0px;
+}
+
+.threeColumn {
+	width: 280px;
+	float: left;
+	margin: 0 60px 0 0;
+}
+
+.threeColumn-last {
+	width: 280px;
+	float: left;
+	margin: 0 0px 0 0;
+}
+
+.floatClear {
+	overflow: auto;
+	margin: 20px auto;
+}
+
 
 /* ---- Footer styles ---- */
 
