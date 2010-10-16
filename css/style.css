@@ -121,12 +121,32 @@ html {
 	margin: 0 auto;
 	}
 
+.container h1 {
+	color: grey;
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+.container strong {
+	font-size: 2em;
+	color: black;
+}
+
 body {
 	background-image: url(../img/footer/footer-bar.jpg);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	overflow: auto;
 	font-family:"Calluna", Georgia, serif;
+}
+
+.float {
+	float: left;
+	width: 190px;
+}
+
+.gutter30 {
+	margin: 0 0 0 30px !important;
 }
 
 /* ---- General styles ---- */
@@ -154,6 +174,12 @@ ul.special li{
 	color:#fff;
 	text-shadow:#306639 1px 1px 0;
 }
+
+.float-right {
+	float: right;
+	display: block;
+}
+
 /* ---- Header styles - INDEX ---- */
 
 
@@ -462,6 +488,48 @@ a:hover .smallLenders {
 	margin: 20px auto;
 }
 
+/* ---- Multi Column Type Styles ---- */
+
+.twoColumn h2 {
+	font-size: 2.29em;
+	line-height:1.2em;
+	margin-bottom:20px;
+}
+
+.twoColumn h3 {
+	font-size: 1.4em;
+	line-height:1.8em;
+	margin-bottom:20px;
+}
+
+.twoColumn-right h2 {
+	font-size: 2.29em;
+	line-height:1.2em;
+	margin-bottom:20px;
+}
+
+.twoColumn-right h3 {
+	font-size: 1.4em;
+	line-height:1.8em;
+	margin-bottom:20px;
+}
+
+.twoColumn-right h4 {
+		color:#97ce8e;
+	font-size: 1.0em;
+	line-height:1.8em;
+	margin-bottom:20px;
+} 
+
+.twoColumn-right ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.twoColumn-right ul li {
+	padding-bottom: 20px;
+}
 
 /* ---- Footer styles ---- */
 
@@ -487,15 +555,6 @@ footer h2 {
 	width: 373px;
 }
 
-/*
-#footer-bar {
-	background-image: url(../img/footer/footer-bar.jpg);
-	background-repeat: no-repeat;
-	background-position: -70px 50px;
-	padding: 128px 0px;
-	width: auto;
-}
-*/
 
 .footer-nav {
 	float: left;
@@ -516,7 +575,7 @@ footer h2 {
 .footer-article {
 	float: right;
 	margin: 10px 10px 0 0;
-	width: 240px;	
+	width: 220px;	
 	text-align: right;
 	font-size: 12px;
 }
