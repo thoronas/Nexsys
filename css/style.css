@@ -149,6 +149,9 @@ body {
 	margin: 0 0 0 30px !important;
 }
 
+.gutter60 {
+	margin: 0 0 0 60px !important;
+}
 /* ---- General styles ---- */
 ul.special{
 	list-style:none;
@@ -350,6 +353,29 @@ ul.special li{
 	font-weight:normal;
 }
 
+/* --- Middle Section Non-index --- */
+
+#midsection .features {
+	width: 150px; 
+	float: left;	
+	margin: 0;
+}
+
+#midsection .threecolumn {
+	width: 220px;
+	float: left;
+	margin: 0;
+}
+
+#midsection .threecolumn article {
+	margin: 0 0 10px 0;
+}
+
+#midsection .threecolumn article img {
+	margin: auto 0;
+	float: left;
+}
+
 /* --- Index Bottom Section --- */
 
 .bottom-section {
@@ -446,6 +472,7 @@ a:hover .smallLenders {
 
 .intro {
 	width: 560px;
+	margin-bottom: 40px;
 }
 
 .download-info {
@@ -530,6 +557,40 @@ a:hover .smallLenders {
 .twoColumn-right ul li {
 	padding-bottom: 20px;
 }
+
+.twoColumn h4 {
+		color:#97ce8e;
+	font-size: 1.0em;
+	line-height:1.8em;
+	margin-bottom:20px;
+} 
+
+/* --- Common objections --- */
+
+.objection {
+	float: left;
+	width: 410px;
+	font-size: 1.4em;
+	line-height: 1.4em;
+}
+
+.arrow {
+	float: left;
+	padding: 42px 67px 41px ;	
+	background-image: url(../img/right-arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.response {
+	float: left;
+	width: 415px;
+	}
+	
+	.margin20px {
+		margin-bottom: 20px;
+		overflow: auto;
+	}
 
 /* ---- Footer styles ---- */
 
