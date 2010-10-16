@@ -68,6 +68,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: normal; text-rendering: optimizeLegibility; }
 html { -webkit-font-smoothing: antialiased; }
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { color:#3c8047; }
+a{ text-decoration:none; }
 a:hover { color:#94cd8c; }
 p{ margin: 0 0 1.5em; }
 ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 3.333em; }
@@ -113,7 +114,6 @@ button {  width: auto; overflow: visible; }
 /* --- Main Structure styles --- */
 html {
 	background: url(../img/header-images/top-header.png) center 0 no-repeat;
-
 }
 
 .container {
@@ -122,14 +122,12 @@ html {
 	}
 
 .container h1 {
-	color: grey;
 	font-size: 1.3em;
 	line-height: 1.5em;
 }
 
 .container strong {
 	font-size: 2em;
-	color: black;
 }
 
 body {
@@ -168,21 +166,33 @@ ul.special li{
 	text-transform:uppercase;
 	text-decoration:none;
 	color:#2a2e33;
-	background:#f2f2f2;
-	padding:7px 20px;
+	background:#f2f2f2 url(../img/corners-small-black.gif) left 100% no-repeat;
 	font-family: "Anivers", Arial, Verdana, sans-serif;
+	padding-left:20px;
+	padding-bottom:5px;
+}
+.btn span{
+	display:inline-block;
+	padding-right:20px;
+	padding-top:5px;
+	background:url(../img/corners-small-black.gif) 100% 0 no-repeat;
 }
 .btn:hover{
 	background:#73c277 url(../img/header-images/hover-bg.png) left top repeat-x;
 	color:#fff;
 	text-shadow:#306639 1px 1px 0;
 }
+.btn:hover span{
+	background:none;
+}
 
 .float-right {
 	float: right;
 	display: block;
 }
-
+p a{
+	border-bottom:#3C8047 dashed 1px;
+}
 /* ---- Header styles - INDEX ---- */
 
 
@@ -190,7 +200,7 @@ ul.special li{
 	width: 840px; 
 	z-index: 4;
 	text-align: center;
-	margin: 0 0 55px 120px;
+	margin: 0 0 55px 170px;
 }
 
 
@@ -233,21 +243,31 @@ ul.special li{
 }
 
 .header-image h3 {
-	width: 100px;
-	height: 10px;
-	background: rgb(230, 230, 230) url(../img/header-images/pricing-brackets.png) no-repeat;
-	margin: 0 auto;
-	padding: 9px 0 12px;
-	font-family: "Anivers", Arial, Verdana, sans-serif;
-	text-transform:uppercase;
-	font-weight:normal;
 	font-size:0.9em;
+	
+	display:inline-block;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#2a2e33;
+	background:#f2f2f2 url(../img/corners-small-black.gif) left 100% no-repeat;
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	padding-left:30px;
+	padding-bottom:5px;
+}
+.header-image h3 span{
+	display:inline-block;
+	padding-right:30px;
+	padding-top:7px;
+	background:url(../img/corners-small-black.gif) 100% 0 no-repeat;
 }
 
 .header-image:hover h3{
 	background: url(../img/header-images/hover-bg.png) repeat-x;
 	color:#fff;
 	text-shadow:#333 1px 1px 0;
+}
+.header-image:hover h3 span{
+	background:none;
 }
 
 .brokers {
@@ -285,15 +305,103 @@ ul.special li{
 
 /* --- Index Top Section --- */
 
+#home-intro{
+	font-size:1.6em;
+	text-align:right;
+	padding-right:10px;
+}
+#home-intro span{
+	display:block;
+	position:relative;
+	text-align:right;
+}
+#home-intro .text-0{
+	line-height:1.1em;
+}
+#home-intro .text-1{
+	font-size:0.9em;
+	color:#545b66;
+	padding-right:20px;
+	line-height:1.1em;
+}
+#home-intro .text-3{
+	font-size:0.84em;
+	color:#545b66;
+	line-height:1.9em;
+}
+#home-intro .text-2{
+	font-size:1.28em;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#home-intro .text-2 strong{
+	font-size:1.13em;
+	color:#489956;
+	font-weight:normal;
+}
+#home-intro #effective-text{
+	font-size:76px;
+	background:url(../img/home-effective-text.png) no-repeat;
+	height:61px;
+	width:272px;
+	text-indent:-9999px;
+	text-align:left;
+	margin-bottom:10px;
+}
+
+#showcase{
+	margin-bottom:30px;
+}
+#showcase .video{
+	background:url(../img/black-corners.gif) left top no-repeat;
+	width:513px;
+	float:left;
+}
+#showcase .video .wrap{
+	background:url(../img/black-corners.gif) 100% top no-repeat;
+}
+#showcase .video img{
+	padding:11px;
+}
+#showcase .shots{
+	width:260px;
+	float:right;
+	padding-left:30px;
+}
+#showcase .shots ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#showcase .shots li{
+	float:left;
+	width:111px;
+	margin-bottom:45px;
+}
+#showcase .shots li.odd{
+	clear:both;
+}
+#showcase .shots li.even{
+	margin-left:30px;
+}
+#showcase .shots figcaption{
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	font-size:0.7em;
+	text-transform:uppercase;
+	text-align:center;
+	display:block;
+}
+
 .top-section {
-	width: 760px;
-	margin: 10px 0 30px 200px;
+	width: 810px;
+	margin: 10px 0 30px 150px;
 	overflow: auto;
 }
 
 .left-column {
 	width: 280px;
 	float: left;
+	margin-left:45px;
 }
 
 .right-column {
@@ -319,12 +427,12 @@ ul.special li{
 }
 #midsection .btn{
 	font-size:1.1em;
-	text-transform:uppercase;
-	text-decoration:none;
+	background:#2a2e33 url(../img/corners-small-gray.gif) left 100% no-repeat;
 	color:#bcc2cc;
-	background:#2a2e33;
-	padding:7px 20px;
 	font-family: "Anivers", Arial, Verdana, sans-serif;
+}
+#midsection .btn span{
+	background:url(../img/corners-small-gray.gif) 100% 0 no-repeat;
 }
 #midsection .btn:hover{
 	background:#545b66;
