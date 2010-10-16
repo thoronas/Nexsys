@@ -399,7 +399,7 @@ ul.special li{
 	left: 280px;
 	top: 70px;
 	width: 600px;
-	overflow: auto;
+	overflow: hidden;
 }
 
 #page-header {
@@ -478,7 +478,7 @@ a:hover .smallLenders {
 .download-info {
 	background: url(../img/midsection/download-brackets.png) no-repeat #e6e6e6;
 	margin: -90px 0 0;
-	padding: 15px 67px 13px 66px;
+	padding: 15px 52px 8px 66px;
 	float: right;
 }
 
@@ -508,6 +508,11 @@ a:hover .smallLenders {
 	width: 280px;
 	float: left;
 	margin: 0 0px 0 0;
+}
+
+.threeColumn-img {
+	width: 280px;
+	margin: 0 auto;
 }
 
 .floatClear {
