@@ -597,6 +597,145 @@ a:hover .smallLenders {
 		overflow: auto;
 	}
 
+
+/* --- Advantage section ---*/
+
+#advantage {
+	background-image: url(../img/advantage/midsection.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 1231px;
+	width: auto;
+	font-size:0.9em;
+	color: white;
+	padding: 40px 0;
+}
+
+#advantage h2 {
+	width: 768px;
+	color: #97ce8e;
+	margin: 0 0 0 95px;
+	font-size: 1.8em;
+	background: url(../img/advantage/top.png) no-repeat right 0;
+}
+
+.advantage-top {
+	background-image: url(../img/advantage/star.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #6f996a;
+	padding: 30px 60px;
+	border-bottom: 1px solid #306639;
+	float: right;
+	margin-right: 66px;
+}
+
+.advantageplus-top {
+	background-image: url(../img/advantage/star.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #99d190;
+	padding: 30px 60px;
+	border-bottom: 1px solid #649165;
+	float: right;
+}
+
+.advantage {
+	background-image: url(../img/advantage/star.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #6f996a;
+	padding: 30px 60px;
+	border-bottom: 1px solid #306639;
+	border-top: 1px solid #97ce8e;
+	float: right;
+	margin-right: 66px;
+}
+
+.advantage-bottom {
+	background: url(../img/advantage/advantage-bottom.png) no-repeat;
+	padding: 30px 60px;
+	float: right;
+	margin: -102px 66px 0 0;	
+	}
+
+.advantageplus-bottom {
+	background: url(../img/advantage/advantageplus-bottom.png) no-repeat;
+	padding: 30px 60px;	
+	float: right;
+	margin: -50px 97px 0 0;
+	}
+
+.advantageXL {
+	background-image: url(../img/advantage/star.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #6f996a;
+	padding: 40px 60px;
+	border-bottom: 1px solid #306639;
+	border-top: 1px solid #97ce8e;
+	float: right;
+	margin-right: 66px;
+}
+
+.advantageplus {
+	background-image: url(../img/advantage/star.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #99d190;
+	padding: 30px 60px;
+	border-bottom: 1px solid #649165;
+	border-top: 1px solid #a3bfa1;
+	float: right;
+}
+
+.advantageplusXL {
+	background-image: url(../img/advantage/star.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #99d190;
+	padding: 40px 60px;
+	border-bottom: 1px solid #649165;
+	border-top: 1px solid #a3bfa1;
+	float: right;
+}
+
+.advantageClear {
+	overflow: auto;
+	margin: 0 auto;
+	width: 766px;
+	list-style: none;
+}
+
+.advantageClear p {
+float: left;
+margin: 17px 0 0 0;
+width: 360px;
+font-size: 1.1em;
+}
+
+.column-header{
+	width: 130px; 
+	display: inline-block;
+position: relative;
+left: 550px;
+margin: 0 55px -20px 0;
+text-align:center;
+}
+
+.column-header p {
+	color: #97ce8e;
+	font-size: 1.1em;
+text-transform: uppercase; 
+}
+
+.column-header strong {
+	color: white;
+	font-weight: normal;
+	font-size: 1em;
+text-transform: uppercase; 
+}
+
 /* ---- Footer styles ---- */
 
 footer{
