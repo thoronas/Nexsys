@@ -310,7 +310,7 @@ p a{
 	height: 162px;
 	position:absolute;
 	top:10px;
-	left: 30px;
+	left: 10px;
 }
 #branding a{
 	display:block;
@@ -512,6 +512,7 @@ p a{
 	font-size: 2.29em;
 	line-height:1.2em;
 	margin-bottom:20px;
+	position: relative;
 }
 #midsection h1 strong{
 	color:#f2f2f2;
@@ -520,6 +521,25 @@ p a{
 	text-transform:lowercase;
 	font-weight:normal;
 }
+#midsection h1 .icon{
+	position: absolute;
+	top:-14px;
+	right: 15px;
+	display:block;
+	width:83px;
+	height: 97px;
+	background: url('../img/home-mid-icons.png') no-repeat;
+}
+#midsection #agents-intro .icon{
+	background-position: 0 0;
+}
+#midsection #brokers-intro .icon{
+	background-position: -83px 0;
+}
+#midsection #lenders-intro .icon{
+	background-position: -166px 0;
+}
+
 
 /* --- Middle Section Non-index --- */
 
