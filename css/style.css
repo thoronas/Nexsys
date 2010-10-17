@@ -113,13 +113,14 @@ button {  width: auto; overflow: visible; }
 
 /* --- Main Structure styles --- */
 html {
-	background: url(../img/header-images/top-header.png) center 0 no-repeat;
+	background: url(../img/top-header.png) center 0 no-repeat;
 }
 
 .container {
 	width: 960px;
 	margin: 0 auto;
-	}
+	position: relative;
+}
 
 .container h1 {
 	font-size: 1.3em;
@@ -193,6 +194,20 @@ ul.special li{
 p a{
 	border-bottom:#3C8047 dashed 1px;
 }
+.container h1{
+	font-size: 2.29em;
+	font-family:"Calluna", Georgia, serif;
+	line-height:1.2em;
+	font-weight:normal;
+	margin-bottom:40px;
+}
+.container h1 strong{
+	font-size:1.3em;
+	font-weight:normal;
+	display:block;
+}
+
+
 /* ---- Header styles - INDEX ---- */
 
 
@@ -201,6 +216,9 @@ p a{
 	z-index: 4;
 	text-align: center;
 	margin: 0 0 55px 170px;
+}
+#index nav{
+	background:url('../img/header-lines-bg.png') -20px 114px no-repeat;
 }
 
 
@@ -217,24 +235,17 @@ p a{
 	display:block;
 }
 
-#index strong {
-	clear: both;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-
 .header-image {
 	float: left;
 	text-decoration: none;
-	margin: 70px 0 0;
+	margin: 50px 51px 0 51px;
 }
 
 .header-image h2 {
 	font-family: "Anivers", Arial, Verdana, sans-serif;
 	text-transform:uppercase;
 	font-weight:normal;
-	margin: 95px 0 5px;
+	margin: 10px 0 5px;
 	color:#2a2e33;
 	font-size:1.15em;
 }
@@ -269,40 +280,61 @@ p a{
 .header-image:hover h3 span{
 	background:none;
 }
-
-.brokers {
-	position: relative;
-	background: url(../img/header-images/forBrokers.png) no-repeat;
-	width: 310px;
-	height: 204px;
-	padding: 102px 155px;	
+.header-image .icon{
+	background:url('../img/home-nav-icons.png') no-repeat;
+	display:block;
+	width:135px;
+	height:156px;
 }
-
-.header-image:hover .brokers {
-	background: url(../img/header-images/forBrokers-hover.png) no-repeat;
+.header-image .agents {
+	background-position:0 0;
 }
-
-.agents {
-	background: url(../img/header-images/forAgents.png) 0 44px no-repeat;  
-	padding: 102px 122px
-}
-
 .header-image:hover .agents {
-	background: url(../img/header-images/forAgents-hover.png) -18px -3px no-repeat;
+	background-position:0 -156px;
 }
-
-.lenders {
-	width: 221px;
-	height: 204px;
-	background: url(../img/header-images/forLenders.png) 0 51px no-repeat;
-	padding: 102px 110px;
+.header-image .brokers {
+	background-position:-237px 0;
 }
-
+.header-image:hover .brokers {
+	background-position:-237px -156px;
+}
+.header-image .lenders {
+	background-position:-475px 0;
+}
 .header-image:hover .lenders {
-	background: url(../img/header-images/forLenders-hover.png) 0 51px no-repeat;
-
+	background-position:-475px -156px;
+	display: 
 }
-
+#branding{
+	width: 127px;
+	height: 162px;
+	position:absolute;
+	top:10px;
+	left: 30px;
+}
+#branding a{
+	display:block;
+	width: 127px;
+	height: 162px;
+	background: url('../img/nexsys-financial-logo.png') no-repeat;
+	text-indent: -9999px;
+	text-align: left;
+}
+.header-text{
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	color: #bcc2cc;
+	font-size:0.9em;
+	text-transform: uppercase;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 2.2em;
+}
+.header-text strong{
+	font-size: 1.3em;
+	color: #fff;
+	font-weight: normal;
+	padding-left: 10px;
+}
 /* --- Index Top Section --- */
 
 #home-intro{
@@ -368,6 +400,24 @@ p a{
 	float:right;
 	padding-left:30px;
 }
+#showcase .shots figure{
+	position: relative;
+}
+#showcase .shots span{
+	position: absolute;
+	top: 10px;
+	left: 27px;
+	display: block;
+	width: 56px;
+	height: 56px;
+	background:none;
+}
+#showcase .shots a:hover span{
+	background: url('../img/image-zoom.png') no-repeat;
+}
+#showcase .shots a:hover img{
+	opacity:0.5;
+}
 #showcase .shots ul{
 	list-style:none;
 	margin:0;
@@ -391,7 +441,16 @@ p a{
 	text-align:center;
 	display:block;
 }
-
+#whats-nexsys .float{
+	float:left;
+	width: 450px;
+}
+#whats-nexsys .float li{
+	width:175px;
+	margin-right: 10px;
+	float: left;
+	margin-bottom: 20px;
+}
 .top-section {
 	width: 810px;
 	margin: 10px 0 30px 150px;
@@ -418,6 +477,7 @@ p a{
 	height: 461px;
 	width: auto;
 	font-size:0.9em;
+	margin-bottom:60px;
 }
 
 #midsection section {
@@ -490,12 +550,35 @@ p a{
 	width: 760px;
 	margin: 10px 0 0 200px;
 	overflow: auto;
+	margin-bottom:45px;
 }
-
+.posts{
+	
+}
+.posts .btn{
+	font-size:0.9em;
+	color:#2a2e33;
+}
+.posts .btn:hover{
+	color:#fff;
+}
+.posts h2{
+	font-size:0.9em;
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	line-height:1.3em;
+	margin-bottom:20px;
+}
 .column {
 	width: 218px;
 	float: left;
 	margin: 0 35px 0 0;
+}
+#home-bottom-logos{
+	text-align:right;
+}
+#home-bottom-logos a{
+	display:inline-block;
+	margin-right:40px;
 }
 
 /* --- Header Styles - NOT INDEX --- */
@@ -754,6 +837,7 @@ footer h2 {
 	position: relative;
 	top: 100px;
 	left: 310px;
+	font-size:0.9em;
 }
 
 footer strong {
