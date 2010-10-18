@@ -106,6 +106,11 @@ button {  width: auto; overflow: visible; }
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 
+.clear{
+	height:0;
+	clear: both;
+}
+
 
  /* Primary Styles
     Author: Flynn O'Connor, October 2010
@@ -132,11 +137,16 @@ html {
 }
 
 body {
-	background-image: url(../img/footer/footer-bar.jpg);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	overflow: auto;
 	font-family:"Calluna", Georgia, serif;
+	padding: 0;
+	margin: 0;
+}
+#footer-bar{
+	background-image: url(../img/footer/footer-bar.jpg);
+	height: 206px;
 }
 
 .float {
@@ -595,6 +605,7 @@ p a{
 }
 #home-bottom-logos{
 	text-align:right;
+	margin-bottom: 50px;
 }
 #home-bottom-logos a{
 	display:inline-block;
@@ -949,32 +960,46 @@ text-transform: uppercase;
 
 /* ---- Footer styles ---- */
 
-footer{
-	margin: 80px auto 0;	
-	height: 220px;
-	width: 960px;
+#footer{
+	clear:both;
+	position: relative;
+	padding-top: 100px;
+	margin-bottom: -90px;
 }
 
-footer h2 {
+#footer h2 {
 	font-size:2.3em;
 	margin-left:30px;
 	margin-bottom:25px;
 }
 
-.footer-logo {
+#footer-logo{
+	position: absolute;
+	right: -70px;
+	top: 0px;
+}
+#footer-logo a{
 	background: url(../img/footer/footer-logo.jpg) no-repeat;
-	position: relative;
-	right: -120px;
-	top: -70px;
-	float: right;
+	display: block;
 	height: 470px;
 	width: 373px;
+	text-indent: -9999px;
 }
 
 
 .footer-nav {
 	float: left;
-	margin: 10px 10px 0 0;
+	width: 100px;
+	padding-left: 30px;
+}
+.footer-nav.last{
+	width: 130px;
+	padding-top: 20px;
+	margin-right: 130px;
+}
+.footer-nav ul{
+	padding: 0;
+	margin: 0;
 }
 .footer-nav a{
 	text-decoration:none;
@@ -987,28 +1012,28 @@ footer h2 {
 	left:10px;
 	color:#489956;
 }
-
-.footer-article {
-	float: right;
-	margin: 10px 10px 0 0;
-	width: 220px;	
+#footer-info{
+	float: left;
+	font-size: 0.9em;
+	color:#888e99;
 	text-align: right;
-	font-size: 12px;
+}
+#footer-info strong{
+	color:#2a2e33;
+	font-weight: normal;
+}
+
+#footer-info .copyrigths:first-line{
+	color:#2a2e33;
 }
 
 .design {
-	width: 250px;
-	position: relative;
-	top: 100px;
-	left: 310px;
+	text-align: right;
 	font-size:0.9em;
-}
-
-footer strong {
-	float: right;
-	margin: 20px 10px 10px 0; 
-	font-size: 1.5em;
-	
+	clear: both;
+	padding-right: 318px;
+	margin-top: 60px;
+	clear: both;
 }
 
 /* 
