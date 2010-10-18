@@ -226,6 +226,9 @@ p a{
 	margin: 0 0 55px 170px;
 }
 #index nav{
+	
+}
+#index.home nav{
 	background:url('../img/header-lines-bg.png') -20px 114px no-repeat;
 }
 
@@ -611,13 +614,9 @@ p a{
 /* --- Header Styles - NOT INDEX --- */
 
 .smallHeader {
-	background-image: url(../img/header-images/top-icons/bg-lines.jpg);
-	background-repeat: no-repeat;
+	background:url('../img/header-nav-lines-2.png') 187px 8px no-repeat;
 	position: relative;
-	left: 280px;
-	top: 70px;
-	width: 600px;
-	overflow: hidden;
+	padding-left: 170px;
 }
 
 #page-header {
@@ -646,43 +645,55 @@ hgroup strong {
 }
 
 .header h2 {
-	font-family: sans-serif;
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	text-transform: uppercase;
 	margin: 50px 0 5px;
 }
 
-.smallBroker {
-	background-image: url(../img/header-images/top-icons/3icons-hover.png);
-	background-repeat: no-repeat;
-	background-position: -91px 20px;
-	padding: 44px 42px;
-}
-
-a:hover .smallBroker {
-	background-image: url(../img/header-images/top-icons/3icons-hover.png);
-	background-repeat: no-repeat;
-	background-position: -89px -100px;
-}
-
-.smallAgents {
+.smallAgents .icon{
 	background-image: url(../img/header-images/top-icons/3icons-hover.png);
 	background-repeat: no-repeat;
 	background-position: 7px 13px;
 	padding: 44px 42px;
 }
 
-a:hover .smallAgents {
+.smallAgents:hover .icon{
 	background: url(../img/header-images/top-icons/3icons-hover.png) 2px -99px no-repeat;
 }
 
-.smallLenders {
+.smallBroker,
+.smallLenders{
+	padding-top: 10px;
+}
+.smallBroker{
+	padding-left: 30px;
+}
+.smallLenders{
+	margin-right: 0;
+	padding-left: 41px;
+}
+.smallBroker .icon{
+	background-image: url(../img/header-images/top-icons/3icons-hover.png);
+	background-repeat: no-repeat;
+	background-position: -91px 20px;
+	padding: 44px 42px;
+}
+
+.smallBroker:hover .icon{
+	background-image: url(../img/header-images/top-icons/3icons-hover.png);
+	background-repeat: no-repeat;
+	background-position: -89px -100px;
+}
+
+.smallLenders .icon{
 	background-image: url(../img/header-images/top-icons/3icons-hover.png);
 	background-repeat: no-repeat;
 	background-position: -185px 16px;
 	padding: 44px 42px;
 }
 
-a:hover .smallLenders {
-	background: url(../img/header-images/top-icons/3icons-hover.png) -179px -94px no-repeat;
+.smallLenders:hover .icon{
+	background: url(../img/header-images/top-icons/3icons-hover.png) -178px -94px no-repeat;
 
 }
 
