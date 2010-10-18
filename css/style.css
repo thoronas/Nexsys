@@ -68,6 +68,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: normal; text-rendering: optimizeLegibility; }
 html { -webkit-font-smoothing: antialiased; }
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { color:#3c8047; }
+a{ text-decoration:none; }
 a:hover { color:#94cd8c; }
 p{ margin: 0 0 1.5em; }
 ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 3.333em; }
@@ -112,24 +113,22 @@ button {  width: auto; overflow: visible; }
 
 /* --- Main Structure styles --- */
 html {
-	background: url(../img/header-images/top-header.png) center 0 no-repeat;
-
+	background: url(../img/top-header.png) center 0 no-repeat;
 }
 
 .container {
 	width: 960px;
 	margin: 0 auto;
-	}
+	position: relative;
+}
 
 .container h1 {
-	color: grey;
 	font-size: 1.3em;
 	line-height: 1.5em;
 }
 
 .container strong {
 	font-size: 2em;
-	color: black;
 }
 
 body {
@@ -168,20 +167,46 @@ ul.special li{
 	text-transform:uppercase;
 	text-decoration:none;
 	color:#2a2e33;
-	background:#f2f2f2;
-	padding:7px 20px;
+	background:#f2f2f2 url(../img/corners-small-black.gif) left 100% no-repeat;
 	font-family: "Anivers", Arial, Verdana, sans-serif;
+	padding-left:20px;
+	padding-bottom:5px;
+}
+.btn span{
+	display:inline-block;
+	padding-right:20px;
+	padding-top:5px;
+	background:url(../img/corners-small-black.gif) 100% 0 no-repeat;
 }
 .btn:hover{
 	background:#73c277 url(../img/header-images/hover-bg.png) left top repeat-x;
 	color:#fff;
 	text-shadow:#306639 1px 1px 0;
 }
+.btn:hover span{
+	background:none;
+}
 
 .float-right {
 	float: right;
 	display: block;
 }
+p a{
+	border-bottom:#3C8047 dashed 1px;
+}
+.container h1{
+	font-size: 2.29em;
+	font-family:"Calluna", Georgia, serif;
+	line-height:1.2em;
+	font-weight:normal;
+	margin-bottom:40px;
+}
+.container h1 strong{
+	font-size:1.3em;
+	font-weight:normal;
+	display:block;
+}
+
 
 /* ---- Header styles - INDEX ---- */
 
@@ -190,7 +215,10 @@ ul.special li{
 	width: 840px; 
 	z-index: 4;
 	text-align: center;
-	margin: 0 0 55px 120px;
+	margin: 0 0 55px 170px;
+}
+#index nav{
+	background:url('../img/header-lines-bg.png') -20px 114px no-repeat;
 }
 
 
@@ -207,24 +235,17 @@ ul.special li{
 	display:block;
 }
 
-#index strong {
-	clear: both;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-
 .header-image {
 	float: left;
 	text-decoration: none;
-	margin: 70px 0 0;
+	margin: 50px 51px 0 51px;
 }
 
 .header-image h2 {
 	font-family: "Anivers", Arial, Verdana, sans-serif;
 	text-transform:uppercase;
 	font-weight:normal;
-	margin: 95px 0 5px;
+	margin: 10px 0 5px;
 	color:#2a2e33;
 	font-size:1.15em;
 }
@@ -233,15 +254,22 @@ ul.special li{
 }
 
 .header-image h3 {
-	width: 100px;
-	height: 10px;
-	background: rgb(230, 230, 230) url(../img/header-images/pricing-brackets.png) no-repeat;
-	margin: 0 auto;
-	padding: 9px 0 12px;
-	font-family: "Anivers", Arial, Verdana, sans-serif;
-	text-transform:uppercase;
-	font-weight:normal;
 	font-size:0.9em;
+	
+	display:inline-block;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#2a2e33;
+	background:#f2f2f2 url(../img/corners-small-black.gif) left 100% no-repeat;
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	padding-left:30px;
+	padding-bottom:5px;
+}
+.header-image h3 span{
+	display:inline-block;
+	padding-right:30px;
+	padding-top:7px;
+	background:url(../img/corners-small-black.gif) 100% 0 no-repeat;
 }
 
 .header-image:hover h3{
@@ -249,51 +277,190 @@ ul.special li{
 	color:#fff;
 	text-shadow:#333 1px 1px 0;
 }
-
-.brokers {
-	position: relative;
-	background: url(../img/header-images/forBrokers.png) no-repeat;
-	width: 310px;
-	height: 204px;
-	padding: 102px 155px;	
+.header-image:hover h3 span{
+	background:none;
 }
-
-.header-image:hover .brokers {
-	background: url(../img/header-images/forBrokers-hover.png) no-repeat;
+.header-image .icon{
+	background:url('../img/home-nav-icons.png') no-repeat;
+	display:block;
+	width:135px;
+	height:156px;
 }
-
-.agents {
-	background: url(../img/header-images/forAgents.png) 0 44px no-repeat;  
-	padding: 102px 122px
+.header-image .agents {
+	background-position:0 0;
 }
-
 .header-image:hover .agents {
-	background: url(../img/header-images/forAgents-hover.png) -18px -3px no-repeat;
+	background-position:0 -156px;
 }
-
-.lenders {
-	width: 221px;
-	height: 204px;
-	background: url(../img/header-images/forLenders.png) 0 51px no-repeat;
-	padding: 102px 110px;
+.header-image .brokers {
+	background-position:-237px 0;
 }
-
+.header-image:hover .brokers {
+	background-position:-237px -156px;
+}
+.header-image .lenders {
+	background-position:-475px 0;
+}
 .header-image:hover .lenders {
-	background: url(../img/header-images/forLenders-hover.png) 0 51px no-repeat;
-
+	background-position:-475px -156px;
+	display: 
 }
-
+#branding{
+	width: 127px;
+	height: 162px;
+	position:absolute;
+	top:10px;
+	left: 10px;
+}
+#branding a{
+	display:block;
+	width: 127px;
+	height: 162px;
+	background: url('../img/nexsys-financial-logo.png') no-repeat;
+	text-indent: -9999px;
+	text-align: left;
+}
+.header-text{
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	color: #bcc2cc;
+	font-size:0.9em;
+	text-transform: uppercase;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 2.2em;
+}
+.header-text strong{
+	font-size: 1.3em;
+	color: #fff;
+	font-weight: normal;
+	padding-left: 10px;
+}
 /* --- Index Top Section --- */
 
+#home-intro{
+	font-size:1.6em;
+	text-align:right;
+	padding-right:10px;
+}
+#home-intro span{
+	display:block;
+	position:relative;
+	text-align:right;
+}
+#home-intro .text-0{
+	line-height:1.1em;
+}
+#home-intro .text-1{
+	font-size:0.9em;
+	color:#545b66;
+	padding-right:20px;
+	line-height:1.1em;
+}
+#home-intro .text-3{
+	font-size:0.84em;
+	color:#545b66;
+	line-height:1.9em;
+}
+#home-intro .text-2{
+	font-size:1.28em;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#home-intro .text-2 strong{
+	font-size:1.13em;
+	color:#489956;
+	font-weight:normal;
+}
+#home-intro #effective-text{
+	font-size:76px;
+	background:url(../img/home-effective-text.png) no-repeat;
+	height:61px;
+	width:272px;
+	text-indent:-9999px;
+	text-align:left;
+	margin-bottom:10px;
+}
+
+#showcase{
+	margin-bottom:30px;
+}
+#showcase .video{
+	background:url(../img/black-corners.gif) left top no-repeat;
+	width:513px;
+	float:left;
+}
+#showcase .video .wrap{
+	background:url(../img/black-corners.gif) 100% top no-repeat;
+}
+#showcase .video img{
+	padding:11px;
+}
+#showcase .shots{
+	width:260px;
+	float:right;
+	padding-left:30px;
+}
+#showcase .shots figure{
+	position: relative;
+}
+#showcase .shots span{
+	position: absolute;
+	top: 10px;
+	left: 27px;
+	display: block;
+	width: 56px;
+	height: 56px;
+	background:none;
+}
+#showcase .shots a:hover span{
+	background: url('../img/image-zoom.png') no-repeat;
+}
+#showcase .shots a:hover img{
+	opacity:0.5;
+}
+#showcase .shots ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#showcase .shots li{
+	float:left;
+	width:111px;
+	margin-bottom:45px;
+}
+#showcase .shots li.odd{
+	clear:both;
+}
+#showcase .shots li.even{
+	margin-left:30px;
+}
+#showcase .shots figcaption{
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	font-size:0.7em;
+	text-transform:uppercase;
+	text-align:center;
+	display:block;
+}
+#whats-nexsys .float{
+	float:left;
+	width: 450px;
+}
+#whats-nexsys .float li{
+	width:175px;
+	margin-right: 10px;
+	float: left;
+	margin-bottom: 20px;
+}
 .top-section {
-	width: 760px;
-	margin: 10px 0 30px 200px;
+	width: 810px;
+	margin: 10px 0 30px 150px;
 	overflow: auto;
 }
 
 .left-column {
 	width: 280px;
 	float: left;
+	margin-left:45px;
 }
 
 .right-column {
@@ -310,6 +477,7 @@ ul.special li{
 	height: 461px;
 	width: auto;
 	font-size:0.9em;
+	margin-bottom:60px;
 }
 
 #midsection section {
@@ -319,12 +487,12 @@ ul.special li{
 }
 #midsection .btn{
 	font-size:1.1em;
-	text-transform:uppercase;
-	text-decoration:none;
+	background:#2a2e33 url(../img/corners-small-gray.gif) left 100% no-repeat;
 	color:#bcc2cc;
-	background:#2a2e33;
-	padding:7px 20px;
 	font-family: "Anivers", Arial, Verdana, sans-serif;
+}
+#midsection .btn span{
+	background:url(../img/corners-small-gray.gif) 100% 0 no-repeat;
 }
 #midsection .btn:hover{
 	background:#545b66;
@@ -344,6 +512,7 @@ ul.special li{
 	font-size: 2.29em;
 	line-height:1.2em;
 	margin-bottom:20px;
+	position: relative;
 }
 #midsection h1 strong{
 	color:#f2f2f2;
@@ -352,6 +521,25 @@ ul.special li{
 	text-transform:lowercase;
 	font-weight:normal;
 }
+#midsection h1 .icon{
+	position: absolute;
+	top:-14px;
+	right: 15px;
+	display:block;
+	width:83px;
+	height: 97px;
+	background: url('../img/home-mid-icons.png') no-repeat;
+}
+#midsection #agents-intro .icon{
+	background-position: 0 0;
+}
+#midsection #brokers-intro .icon{
+	background-position: -83px 0;
+}
+#midsection #lenders-intro .icon{
+	background-position: -166px 0;
+}
+
 
 /* --- Middle Section Non-index --- */
 
@@ -382,12 +570,35 @@ ul.special li{
 	width: 760px;
 	margin: 10px 0 0 200px;
 	overflow: auto;
+	margin-bottom:45px;
 }
-
+.posts{
+	
+}
+.posts .btn{
+	font-size:0.9em;
+	color:#2a2e33;
+}
+.posts .btn:hover{
+	color:#fff;
+}
+.posts h2{
+	font-size:0.9em;
+	font-family: "Anivers", Arial, Verdana, sans-serif;
+	line-height:1.3em;
+	margin-bottom:20px;
+}
 .column {
 	width: 218px;
 	float: left;
 	margin: 0 35px 0 0;
+}
+#home-bottom-logos{
+	text-align:right;
+}
+#home-bottom-logos a{
+	display:inline-block;
+	margin-right:40px;
 }
 
 /* --- Header Styles - NOT INDEX --- */
@@ -790,6 +1001,7 @@ footer h2 {
 	position: relative;
 	top: 100px;
 	left: 310px;
+	font-size:0.9em;
 }
 
 footer strong {
